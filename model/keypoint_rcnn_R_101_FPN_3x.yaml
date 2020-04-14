@@ -1,0 +1,10 @@
+_BASE_: "Base-Keypoint-RCNN-FPN.yaml"
+MODEL:
+  WEIGHTS: "model/keypoint_rcnn_R_101_FPN_3x.pkl"
+  RESNETS:
+    DEPTH: 101
+INPUT:
+  MIN_SIZE_TEST: 800
+SOLVER:
+  STEPS: (210000, 250000)
+  MAX_ITER: 270000
