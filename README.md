@@ -7,13 +7,16 @@
 
 > 程序思路:请阅读 ReadMe 文件夹
 
+Run:   python3 demo_situp.py  --video-input cut.mp4     ( Linux )
+
 issue：
 1. AssertionError: Checkpoint model/keypoint_rcnn_R_101_FPN_3x.pkl not found!
-  解决办法：可以参照 https://github.com/facebookresearch/detectron2/blob/master/GETTING_STARTED.md 的demo，将官方demo的--config-file ../configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml 修改为运行 --config-file ../configs/COCO-Keypoints/keypoint_rcnn_R_101_FPN_3x.yaml ，detectron2 可以自行下载预训练模型。 即在 detectron2/demo 路径下，运行 python3 demo.py  --config-file ../configs/COCO-Keypoints/keypoint_rcnn_R_101_FPN_3x.yaml  --opts MODEL.DEVICE cpu
+  
+  链接: https://pan.baidu.com/s/1CIjF-GHqCk6FGW-ABxEzYA 提取码: d5uf  下载放置：model/
   
 2.  AssertionError: Torch not compiled with CUDA enabled
 
-    解决办法：运行时 添加参数： --opts MODEL.DEVICE cpu   ，使用方法 同上。
+    解决办法：运行时 添加参数： --opts MODEL.DEVICE cpu  
 
 
     
