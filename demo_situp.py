@@ -177,6 +177,7 @@ if __name__ == "__main__":
                 #   显示 
                 up_result = str(statistic_state_resulte[0])
                 sit_result = str(statistic_state_resulte[1])
+                vis_frame = vis_frame.astype('uint8')
                 vis_frame = cv2.putText(
                     vis_frame, "up:"+up_result, (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 255, 0), 2
                 )
