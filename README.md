@@ -12,7 +12,7 @@ Run:   python3 demo_situp.py  --video-input cut.mp4     ( Linux )
 issue：
 1. AssertionError: Checkpoint model/keypoint_rcnn_R_101_FPN_3x.pkl not found!
   
-  链接: https://pan.baidu.com/s/1CIjF-GHqCk6FGW-ABxEzYA 提取码: d5uf  下载放置：model/
+    链接: https://pan.baidu.com/s/1CIjF-GHqCk6FGW-ABxEzYA 提取码: d5uf  下载放置：model/
   
 2.  AssertionError: Torch not compiled with CUDA enabled
 
